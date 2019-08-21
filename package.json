@@ -1,0 +1,73 @@
+{
+    "name": "vsmackeybindings",
+    "displayName": "VSMacKeybindings",
+    "description": "Visual Studio for Mac KeyBindings",
+    "version": "0.0.1",
+    "publisher": "Clancey",
+    "engines": {
+        "vscode": "^1.37.0"
+    },
+    "categories": [
+        "Keymaps"
+    ],
+    "contributes": {
+        "keybindings": [
+            {
+                "key": "ctrl+i",
+                "command": "editor.action.formatDocument",
+                "when": "editorTextFocus && !editorReadonly"
+            },
+            {
+                "key": "shift+alt+f",
+                "command": "-editor.action.formatDocument",
+                "when": "editorTextFocus && !editorReadonly"
+            },
+            {
+                "key": "cmd+enter",
+                "command": "workbench.action.debug.start",
+                "when": "!inDebugMode"
+            },
+            {
+                "key": "f5",
+                "command": "-workbench.action.debug.start",
+                "when": "!inDebugMode"
+            },
+            {
+                "key": "shift+cmd+s",
+                "command": "workbench.action.files.saveAll"
+            },
+            {
+                "key": "alt+cmd+s",
+                "command": "-workbench.action.files.saveAll"
+            },
+            {
+                "key": "cmd+b",
+                "command": "workbench.action.tasks.build"
+            },
+            {
+                "key": "shift+cmd+b",
+                "command": "-workbench.action.tasks.build"
+            },
+            {
+                "key": "ctrl+shift+enter",
+                "command": "workbench.action.debug.stop",
+                "when": "inDebugMode"
+            },
+            {
+                "key": "shift+f5",
+                "command": "-workbench.action.debug.stop",
+                "when": "inDebugMode"
+            },
+            {
+                "key": "cmd+d",
+                "command": "editor.action.goToDeclaration",
+                "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+            },
+            {
+                "key": "f12",
+                "command": "-editor.action.goToDeclaration",
+                "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+            }
+        ]
+    }
+}
