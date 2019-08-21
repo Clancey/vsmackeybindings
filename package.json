@@ -2,15 +2,15 @@
     "name": "vsmackeybindings",
     "displayName": "VSMacKeybindings",
     "description": "Visual Studio for Mac KeyBindings",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "Clancey",
     "repository": {
-		"type": "git",
-		"url": "https://github.com/Clancey/vsmackeybindings.git"
-	},
-	"bugs": {
-		"url": "https://github.com/Clancey/vsmackeybindings/issues"
-	},
+        "type": "git",
+        "url": "https://github.com/Clancey/vsmackeybindings.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Clancey/vsmackeybindings/issues"
+    },
     "engines": {
         "vscode": "^1.37.0"
     },
